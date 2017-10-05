@@ -1,7 +1,10 @@
-# node-red-contrib-milight
+# node-red-contrib-milight-2
 
 A Node Red nodes to control all bulb types Milight LED bulbs and OEM equivalents such as Rocket LED, Limitless LED Applamp, Easybulb, s'luce, iLight, iBulb, and Kreuzer. 
 
+This project is a fork of [stephenkeep/node-red-contrib-milight](https://github.com/stephenkeep/node-red-contrib-milight). 
+I decided to spawn my fork as a new package as the author of the parent project is not replying to e-mails and pending issues since months. 
+ 
 ## Install
 
 ```npm i node-red-contrib-milight```
