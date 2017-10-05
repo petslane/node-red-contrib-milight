@@ -7,7 +7,10 @@ I decided to spawn my fork as a new package as the author of the parent project 
  
 ## Install
 
-```npm i node-red-contrib-milight```
+You can either install the package from the command line or choose "Manage Palette" from the menu of the node-red web
+application.
+
+```npm i node-red-contrib-milight-2```
 
 ## Example Flow
 
