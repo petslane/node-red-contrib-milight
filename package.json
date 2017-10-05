@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-milight-2",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A Node-RED node to control the MiLight family (limitless led, easybulb) of light.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stephenkeep/node-red-contrib-milight.git"
+    "url": "https://github.com/mwittig/node-red-contrib-milight.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mwittig/node-red-contrib-milight/issues"
   },
   "contributors": [
     {
