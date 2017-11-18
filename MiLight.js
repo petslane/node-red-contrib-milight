@@ -114,6 +114,10 @@ module.exports = function (RED) {
                                     light.sendCommands(
                                         commands.on(zone),
                                         commands.saturation(zone, value, true));
+                                else if (command === 'temperature' && bulb === 'fullColor')
+                                    light.sendCommands(
+                                        commands.on(zone),
+                                        commands.whiteTemperature(zone, value));
                             }
                             break;
                     }
