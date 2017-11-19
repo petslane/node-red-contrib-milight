@@ -78,7 +78,8 @@
             <li>'brightness' - Set brightness, <code>msg.payload</code> must contain a number in 0 - 100</li>
             <li>'color' - Set color, <code>msg.payload</code> must contain a number in 0 - 255</li>
             <li>'saturation' - Set color saturation (full color bulb type, only), <code>msg.payload</code>
-            must contain a number in 0 - 100</li>
+            <li>'temperature' - Set white color temperature (full color bulb type, only), `msg.payload` contains a
+            value between 0 - 100, where 0 is 2700 K and 100 is 6500 K</li>
         </ul>
         <li><i>Color String</i> - If a color string, e.g. "blue" or "rgb(255, 128, 128)" is provided and
         the command verb "rgb" is assigned to <code>msg.command</code> or <code>msg.topic</code>
