@@ -42,7 +42,8 @@ To control the bulb pass the command to `msg.payload` as follows:
      - 'brightness' - Set brightness, `msg.payload` must contain a number in 0 - 100
      - 'color' - Set color, `msg.payload` must contain a number in 0 - 255
      - 'saturation' - Set color saturation (full color bulb type, only), `msg.payload` must contain a number in 0 - 100
-     - 'temperature' - Set white color temperature (full color bulb only), `msg.paylod` contains a value between 0 - 100, where 0 is 2700 K and 100 is 6500 K.
+     - 'temperature' - Set white color temperature (full color bulb type, only), `msg.payload` contains a value 
+       between 0 - 100, where 0 is 2700 K and 100 is 6500 K.
  - *Color String* - If a color string, e.g. "blue" or "rgb(255, 128, 128)" is provided and the command verb "rgb" is 
     assigned to `msg.command` or `msg.topic` the RGB color can be set. Note, however, for "color" and "bridge" type
     bulbs the Milight hue will be set, only. For "full color" bulbs the saturation and brightness will be also set.
