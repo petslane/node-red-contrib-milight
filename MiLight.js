@@ -127,6 +127,8 @@ module.exports = function (RED) {
                                     light.sendCommands(
                                         commands.on(zone),
                                         commands.whiteTemperature(zone, value));
+                                else if (command === 'mode')
+                                        light.sendCommands(commands.on(zone), commands.effectMode(zone, value));
                             }
                             break;
                     }

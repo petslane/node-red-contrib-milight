@@ -47,4 +47,5 @@ To control the bulb pass the command to `msg.payload` as follows:
  - *Color String* - If a color string, e.g. "blue" or "rgb(255, 128, 128)" is provided and the command verb "rgb" is 
     assigned to `msg.command` or `msg.topic` the RGB color can be set. Note, however, for "color" and "bridge" type
     bulbs the Milight hue will be set, only. For "full color" bulbs the saturation and brightness will be also set.
-
+- *Mode String* - If a mode string, "0x01" to "0x09" is provided and the command verb "mode" is 
+    assigned to `msg.command` or `msg.topic` the specific mode will be set. (color bulb types only)
