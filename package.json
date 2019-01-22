@@ -44,7 +44,7 @@
     }
   },
   "dependencies": {
-    "node-milight-promise": "^0.2.32",
+    "node-milight-promise": "^0.3.2",
     "tinycolor2": "^1.4.1"
   }
 }
