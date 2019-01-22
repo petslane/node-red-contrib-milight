@@ -4,6 +4,7 @@ module.exports = function (RED) {
     var Milight = require('node-milight-promise');
     var packageFile = require('./package.json');
     var Color = require('tinycolor2');
+    var url = require('url');
 
     function node(config) {
 
@@ -14,8 +15,16 @@ module.exports = function (RED) {
         if (config.bridgetype == null || config.bridgetype === '') {
             config.bridgetype = 'legacy'
         }
+
+        var myUrl = url.parse("http://" + config.ip);
+        var port;
+        if (myUrl.port != null) {
+            port = myUrl.port;
+        }
+        RED.log.info("Milight:" + myUrl.hostname + ":" + port);
         var light = new Milight.MilightController({
-                ip: config.ip,
+                ip: myUrl.hostname,
+                port: port,
                 delayBetweenCommands: (config.bridgetype !== 'v6') ? 200 : 100,
                 commandRepeat: 1,
                 type: config.bridgetype,
