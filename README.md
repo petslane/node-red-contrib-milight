@@ -1,9 +1,17 @@
-# node-red-contrib-milight-2
+# node-red-contrib-milight-3
 
 A Node Red node to control all bulb types Milight LED bulbs and OEM equivalents such as Rocket LED, Limitless LED Applamp, Easybulb, s'luce, iLight, iBulb, and Kreuzer. 
 
-This project is a fork of [stephenkeep/node-red-contrib-milight](https://github.com/stephenkeep/node-red-contrib-milight). 
-I decided to spawn my fork as a new package as the author of the parent project is not replying to e-mails and pending issues since months. 
+~This project is a fork of [stephenkeep/node-red-contrib-milight](https://github.com/stephenkeep/node-red-contrib-milight).~ 
+~I decided to spawn my fork as a new package as the author of the parent project is not replying to e-mails and pending issues since months.~ 
+ 
+This project is a fork of [mwittig/node-red-contrib-milight](https://github.com/mwittig/node-red-contrib-milight). 
+I decided to spawn my fork as a new package as the author is not reacting on any PRs since months. 
+ 
+## Changes compared to [mwittig/node-red-contrib-milight](https://github.com/mwittig/node-red-contrib-milight)
+
+- NodeRED 1.x support
+- Bridge address can be dynamic, set from context or input
  
 ## Install
 
